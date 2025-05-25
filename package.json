@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -35,6 +36,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{mjs,json}": "prettier --write"
+    "*.{mjs,json}": "prettier --write",
+    "*.{js,css,md}": "prettier --write"
   }
 }
