@@ -150,7 +150,7 @@ export const skills = {
         name: "Software Development",
         level: 100,
         description:
-          "Building software solutions to help businesses excel in an increasingly comptetive market",
+          "Building software solutions to help businesses excel in an increasingly competitive market",
       },
       {
         name: "Security",

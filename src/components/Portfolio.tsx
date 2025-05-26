@@ -58,7 +58,16 @@ const Portfolio = () => {
                     >
                       View Projects
                     </button>
-                    <button className="btn btn-outline btn-lg">
+                    <button
+                      className="btn btn-outline btn-lg"
+                      onClick={() =>
+                        (
+                          document?.getElementById(
+                            "downloadresume",
+                          ) as HTMLDialogElement
+                        )?.showModal()
+                      }
+                    >
                       Download Resume
                     </button>
                   </div>
@@ -129,6 +138,21 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+
+      <dialog id="downloadresume" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">
+            Resume is available upon request
+          </h3>
+          <p className="py-4">
+            Due to privacy concerns, only providing resume upon request. Please
+            reach out via LinkedIn or Email
+          </p>
+        </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </div>
   );
 };
