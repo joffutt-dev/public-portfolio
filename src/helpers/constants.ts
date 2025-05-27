@@ -39,6 +39,28 @@ export const skills = {
         description:
           "Personally prefer vite and lighter weight alternatives, but have lots of experience with nextjs as well",
       },
+      {
+        name: "Cypress and MSW",
+        level: 90,
+        description:
+          "Essential testing frameworks for the front end, critical for larger teams and for managing tech debt",
+      },
+      {
+        name: "angularJS",
+        level: 75,
+        description:
+          "Been a few years since I've professionally built anything in angular, but lots of experience with it in the past",
+      },
+      {
+        name: "Svelte",
+        level: 75,
+        description: "Worked with this personally, but not yet professionally",
+      },
+      {
+        name: "VueJS",
+        level: 75,
+        description: "Worked with this personally, but not yet professionally ",
+      },
     ],
     image:
       "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
@@ -51,14 +73,25 @@ export const skills = {
       {
         name: "Node.js",
         level: 95,
-        description:
-          "JavaScript runtime for building scalable server-side applications",
+        description: "Experience with server side javascript solutions",
       },
       {
         name: "Java",
         level: 95,
         description:
           "Java Expert with thousands of hours building Java solutions, ranging in complexity from simple CRUD Applications to robust microservice architectures",
+      },
+      {
+        name: "Spring boot/Spring",
+        level: 95,
+        description:
+          "Leveraged Spring boot to create many different web apps, and many different services in microservice architectures",
+      },
+      {
+        name: "Hibernate",
+        level: 90,
+        description:
+          "Nearly essential java library for quickly and safely handling database calls",
       },
       {
         name: "Pega",
@@ -73,27 +106,37 @@ export const skills = {
           "Thousands of professional hours implementing and working with camunda's workflow engine",
       },
       {
-        name: "PostgreSQL",
+        name: "SQL",
         level: 95,
-        description: "Database of choice for full stack frameworks",
+        description:
+          "Lots of professional experience with Postgres, Oracle, DB2, and SQL Server",
+      },
+      {
+        name: "NoSQL",
+        level: 80,
+        description:
+          "Utilized briefly, but structured queries always seem to win out in our tech stacks",
+      },
+      {
+        name: "Prisma",
+        level: 90,
+        description:
+          "At the risk of needing to call out npm libraries individually, Prisma is an important part of our server side JS implementations ",
+      },
+      {
+        name: "Apache Solr",
+        level: 70,
+        description: "Blazing fast search indexing tool from Apache",
+      },
+      {
+        name: "C#",
+        level: 70,
+        description:
+          "Early in my career did a lot more with C#. Should be able to pick it back up quickly",
       },
     ],
     image:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
-  },
-  mobile: {
-    title: "Mobile Development",
-    description:
-      "Developing cross-platform mobile applications with native performance.",
-    technologies: [
-      {
-        name: "React Native",
-        level: 75,
-        description: "Cross-platform mobile app development using React",
-      },
-    ],
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
   },
   devops: {
     title: "DevOps & Cloud",
@@ -102,7 +145,7 @@ export const skills = {
     technologies: [
       {
         name: "GitHub Actions",
-        level: 100,
+        level: 95,
         description: "CI/CD platform for automated testing and deployment",
       },
       {
@@ -113,29 +156,47 @@ export const skills = {
       },
       {
         name: "Docker",
-        level: 100,
+        level: 95,
         description:
           "Containerization platform for consistent deployment environments",
       },
       {
+        name: "SonarQube",
+        level: 95,
+        description:
+          "open-source platform for continuous inspection of code quality, focusing on identifying and addressing potential issues early in the development lifecycle",
+      },
+      {
         name: "Kubernetes",
-        level: 90,
+        level: 80,
         description: "Container orchestration system for automated deployment",
+      },
+      {
+        name: "Jenkins",
+        level: 75,
+        description:
+          "An open source continuous integration/continuous delivery and deployment (CI/CD) automation software",
       },
     ],
     image:
       "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
   },
   design: {
-    title: "UI/UX Design",
+    title: "Project Management",
     description:
-      "Creating intuitive and visually appealing user experiences with modern design principles.",
+      "Software tools used to successfully lead projects and create intuitive and visually appealing user experiences with modern design principles.",
     technologies: [
       {
         name: "Figma",
-        level: 90,
+        level: 75,
         description:
           "Collaborative design tool for creating user interfaces and prototypes",
+      },
+      {
+        name: "Jira",
+        level: 90,
+        description:
+          "Project management and issue tracking software tool developed by Atlassian",
       },
     ],
     image:
@@ -144,7 +205,7 @@ export const skills = {
   consulting: {
     title: "Tech Consulting",
     description:
-      "Advising businesses on proper tech implementations with modern software and hardware architectures",
+      "Advising customers on proper tech implementations with modern software and hardware architectures",
     technologies: [
       {
         name: "Software Development",
@@ -162,7 +223,7 @@ export const skills = {
         name: "AI",
         level: 95,
         description:
-          "A tool when used properly to take businesses to the next level",
+          "When used properly can elevate the business/product to new levels",
       },
     ],
     image:

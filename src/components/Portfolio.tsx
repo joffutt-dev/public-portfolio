@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { skills } from "../helpers/constants";
+import { getExpertiseLevel } from "../helpers/functions";
 import { StickySidebar } from "./StickySidebar";
 
 const Portfolio = () => {
@@ -98,7 +99,7 @@ const Portfolio = () => {
                           <div className="flex justify-between items-center mb-3">
                             <h3 className="font-bold text-lg">{tech.name}</h3>
                             <div className="badge badge-primary badge-lg">
-                              Expert
+                              {getExpertiseLevel(tech.level)}
                             </div>
                           </div>
                           <p className="text-base-content/70 mb-4">
