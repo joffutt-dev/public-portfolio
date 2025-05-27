@@ -14,4 +14,5 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  base: "/public-portfolio",
 });
