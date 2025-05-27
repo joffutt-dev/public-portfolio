@@ -6,8 +6,6 @@ import { StickySidebar } from "./StickySidebar";
 const Portfolio = () => {
   const [activeSkill, setActiveSkill] = useState("frontend");
 
-  console.log(activeSkill);
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = Object.keys(skills);

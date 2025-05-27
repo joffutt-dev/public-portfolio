@@ -1,3 +1,9 @@
+import backend from "../assets/backend.jpg";
+import cicd from "../assets/cicd.jpg";
+import consulting from "../assets/consulting.jpg";
+import design from "../assets/design.jpg";
+import frontend from "../assets/frontend.jpg";
+
 export const skills = {
   frontend: {
     title: "Frontend Development",
@@ -8,62 +14,64 @@ export const skills = {
         name: "React",
         level: 100,
         description:
-          "Leading expert in React, with thousands of hours spent building React Dashboards of varying complexity",
+          "JavaScript library for building user interfaces through reusable components and virtual DOM",
       },
       {
         name: "Typescript",
         level: 100,
-        description: "A must in modern web development",
+        description:
+          "Strongly typed programming language that builds on JavaScript by adding static type definitions",
       },
       {
         name: "Tailwind CSS",
-        level: 90,
+        level: 95,
         description:
-          "Utilized mostly in personal projects, not large scale professional projects",
+          "Utility-first CSS framework that provides low-level utility classes for building custom designs",
       },
       {
         name: "Modern component libraries",
         level: 100,
         description:
-          "Chakra ui, PrimeReact, and many more. Spent hundreds of hours researching the best libraries to use so you don't have to",
+          "Pre-built React component libraries like Chakra UI and PrimeReact that accelerate UI development",
       },
       {
         name: "Recharts and Apache ECharts",
         level: 100,
         description:
-          "Spent hundreds of hours building React code centered around these libraries to build beautiful metrics",
+          "Data visualization libraries for React - Recharts for composable charts and ECharts for interactive visualizations",
       },
       {
         name: "Next.js",
         level: 90,
         description:
-          "Personally prefer vite and lighter weight alternatives, but have lots of experience with nextjs as well",
+          "React framework that provides server-side rendering, static site generation, and full-stack capabilities",
       },
       {
         name: "Cypress and MSW",
         level: 90,
         description:
-          "Essential testing frameworks for the front end, critical for larger teams and for managing tech debt",
+          "Testing tools - Cypress for end-to-end testing and Mock Service Worker (MSW) for API mocking",
       },
       {
-        name: "angularJS",
+        name: "AngularJS",
         level: 75,
         description:
-          "Been a few years since I've professionally built anything in angular, but lots of experience with it in the past",
+          "JavaScript framework for building dynamic single-page applications with two-way data binding",
       },
       {
         name: "Svelte",
         level: 75,
-        description: "Worked with this personally, but not yet professionally",
+        description:
+          "Component framework that compiles to vanilla JavaScript for optimal performance",
       },
       {
         name: "VueJS",
         level: 75,
-        description: "Worked with this personally, but not yet professionally ",
+        description:
+          "Progressive JavaScript framework for building user interfaces with reactive data binding",
       },
     ],
-    image:
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
+    image: frontend,
   },
   backend: {
     title: "Backend Development",
@@ -71,72 +79,73 @@ export const skills = {
       "Creating robust server-side applications and APIs with scalable architecture.",
     technologies: [
       {
-        name: "Node.js",
-        level: 95,
-        description: "Experience with server side javascript solutions",
-      },
-      {
         name: "Java",
-        level: 95,
+        level: 100,
         description:
-          "Java Expert with thousands of hours building Java solutions, ranging in complexity from simple CRUD Applications to robust microservice architectures",
+          "Object-oriented programming language known for platform independence and enterprise application development",
       },
       {
         name: "Spring boot/Spring",
         level: 95,
         description:
-          "Leveraged Spring boot to create many different web apps, and many different services in microservice architectures",
+          "Java framework that simplifies enterprise application development with dependency injection and auto-configuration",
       },
       {
         name: "Hibernate",
         level: 90,
         description:
-          "Nearly essential java library for quickly and safely handling database calls",
+          "Object-relational mapping (ORM) framework for Java that simplifies database interactions",
       },
       {
         name: "Pega",
         level: 85,
         description:
-          "Pega CSA with an impressive Tech backround to assist with Pega architectures",
+          "Low-code platform for business process management, case management, and customer engagement",
       },
       {
         name: "Camunda",
         level: 95,
         description:
-          "Thousands of professional hours implementing and working with camunda's workflow engine",
+          "Open-source workflow and decision automation platform for business process management",
       },
       {
         name: "SQL",
         level: 95,
         description:
-          "Lots of professional experience with Postgres, Oracle, DB2, and SQL Server",
+          "Structured Query Language for managing and manipulating relational databases",
       },
       {
         name: "NoSQL",
         level: 80,
         description:
-          "Utilized briefly, but structured queries always seem to win out in our tech stacks",
+          "Non-relational database systems that provide flexible data models for unstructured data",
+      },
+      {
+        name: "Node.js",
+        level: 95,
+        description:
+          "JavaScript runtime environment that enables server-side JavaScript execution",
       },
       {
         name: "Prisma",
         level: 90,
         description:
-          "At the risk of needing to call out npm libraries individually, Prisma is an important part of our server side JS implementations ",
+          "Next-generation ORM for Node.js and TypeScript that provides type-safe database access",
       },
       {
         name: "Apache Solr",
         level: 70,
-        description: "Blazing fast search indexing tool from Apache",
+        description:
+          "Open-source enterprise search platform built on Apache Lucene for full-text search",
       },
       {
         name: "C#",
         level: 70,
         description:
-          "Early in my career did a lot more with C#. Should be able to pick it back up quickly",
+          "Object-oriented programming language developed by Microsoft for .NET framework applications",
       },
     ],
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
+    image: backend,
   },
   devops: {
     title: "DevOps & Cloud",
@@ -146,40 +155,41 @@ export const skills = {
       {
         name: "GitHub Actions",
         level: 95,
-        description: "CI/CD platform for automated testing and deployment",
+        description:
+          "Workflow automation platform integrated with GitHub for continuous integration and deployment",
       },
       {
         name: "AWS",
         level: 95,
         description:
-          "Amazon Web Services cloud platform for scalable infrastructure",
+          "Amazon Web Services - comprehensive cloud computing platform offering compute, storage, and networking services",
       },
       {
         name: "Docker",
         level: 95,
         description:
-          "Containerization platform for consistent deployment environments",
+          "Containerization platform that packages applications and dependencies into portable containers",
       },
       {
         name: "SonarQube",
         level: 95,
         description:
-          "open-source platform for continuous inspection of code quality, focusing on identifying and addressing potential issues early in the development lifecycle",
+          "Code quality and security analysis platform that performs static code analysis to detect bugs and vulnerabilities",
       },
       {
         name: "Kubernetes",
         level: 80,
-        description: "Container orchestration system for automated deployment",
+        description:
+          "Container orchestration system that automates deployment, scaling, and management of containerized applications",
       },
       {
         name: "Jenkins",
         level: 75,
         description:
-          "An open source continuous integration/continuous delivery and deployment (CI/CD) automation software",
+          "Open-source automation server for building, testing, and deploying software through CI/CD pipelines",
       },
     ],
-    image:
-      "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
+    image: cicd,
   },
   design: {
     title: "Project Management",
@@ -190,17 +200,16 @@ export const skills = {
         name: "Figma",
         level: 75,
         description:
-          "Collaborative design tool for creating user interfaces and prototypes",
+          "Collaborative web-based design tool for creating user interfaces, prototypes, and design systems",
       },
       {
         name: "Jira",
         level: 90,
         description:
-          "Project management and issue tracking software tool developed by Atlassian",
+          "Project management and issue tracking software for agile development teams and bug tracking",
       },
     ],
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop",
+    image: design,
   },
   consulting: {
     title: "Tech Consulting",
@@ -211,22 +220,21 @@ export const skills = {
         name: "Software Development",
         level: 100,
         description:
-          "Building software solutions to help businesses excel in an increasingly competitive market",
+          "Process of designing, creating, testing, and maintaining software applications and systems",
       },
       {
         name: "Security",
         level: 100,
         description:
-          "Advising in proper security implementations to keep data in the right hands",
+          "Implementation of measures to protect systems, networks, and data from cyber threats and unauthorized access",
       },
       {
         name: "AI",
         level: 95,
         description:
-          "When used properly can elevate the business/product to new levels",
+          "Artificial Intelligence technologies including machine learning, natural language processing, and automated decision-making systems",
       },
     ],
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop",
+    image: consulting,
   },
 };
