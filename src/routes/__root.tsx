@@ -10,7 +10,16 @@ export const Route = createRootRoute({
           <div className="text-xl font-bold">Portfolio</div>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-primary">Contact Me</button>
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              import.meta.env.VITE_LINKEDIN_URL
+                ? window.open(import.meta.env.VITE_LINKEDIN_URL, "_blank")
+                : undefined
+            }
+          >
+            Contact Me
+          </button>
         </div>
       </div>
       <hr />

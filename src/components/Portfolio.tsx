@@ -128,7 +128,17 @@ const Portfolio = () => {
                   next project.
                 </p>
                 <div className="card-actions justify-center">
-                  <button className="btn btn-neutral btn-lg">
+                  <button
+                    className="btn btn-neutral btn-lg"
+                    onClick={() =>
+                      import.meta.env.VITE_LINKEDIN_URL
+                        ? window.open(
+                            import.meta.env.VITE_LINKEDIN_URL,
+                            "_blank",
+                          )
+                        : undefined
+                    }
+                  >
                     Get In Touch
                   </button>
                 </div>

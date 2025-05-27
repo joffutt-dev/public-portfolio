@@ -47,6 +47,12 @@ export const skills = {
           "React framework that provides server-side rendering, static site generation, and full-stack capabilities",
       },
       {
+        name: "Vite",
+        level: 90,
+        description:
+          "Frontend build tool and development server designed to improve the developer experience, especially in modern web applications",
+      },
+      {
         name: "Cypress and MSW",
         level: 90,
         description:
@@ -58,18 +64,19 @@ export const skills = {
         description:
           "JavaScript framework for building dynamic single-page applications with two-way data binding",
       },
-      {
-        name: "Svelte",
-        level: 75,
-        description:
-          "Component framework that compiles to vanilla JavaScript for optimal performance",
-      },
-      {
-        name: "VueJS",
-        level: 75,
-        description:
-          "Progressive JavaScript framework for building user interfaces with reactive data binding",
-      },
+      //removing these for now, i think these could go here someday, but probably will group with expansion of skills feature that is planned
+      // {
+      //   name: "Svelte",
+      //   level: 75,
+      //   description:
+      //     "Component framework that compiles to vanilla JavaScript for optimal performance",
+      // },
+      // {
+      //   name: "VueJS",
+      //   level: 75,
+      //   description:
+      //     "Progressive JavaScript framework for building user interfaces with reactive data binding",
+      // },
     ],
     image: frontend,
   },
