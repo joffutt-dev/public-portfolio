@@ -139,12 +139,12 @@ export const skills = {
         description:
           "Next-generation ORM for Node.js and TypeScript that provides type-safe database access",
       },
-      {
-        name: "Apache Solr",
-        level: 70,
-        description:
-          "Open-source enterprise search platform built on Apache Lucene for full-text search",
-      },
+      // {
+      //   name: "Apache Solr",
+      //   level: 70,
+      //   description:
+      //     "Open-source enterprise search platform built on Apache Lucene for full-text search",
+      // },
       {
         name: "C#",
         level: 70,

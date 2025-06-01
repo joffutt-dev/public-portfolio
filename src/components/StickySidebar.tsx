@@ -17,8 +17,8 @@ export function StickySidebar({
   setActiveItem,
 }: StickyHeaderProps) {
   return (
-    <div className="w-80 bg-base-200 h-screen sticky p-6 shadow-xl top-0 overflow-y-auto">
-      <div className="mb-8">
+    <div className="w-full lg:w-80 bg-base-200 lg:h-screen lg:sticky p-6 shadow-xl lg:top-0 lg:overflow-y-auto">
+      <div className="lg:mb-8">
         <h2 className="text-2xl font-bold mb-4">Skills & Expertise</h2>
         <p className="text-base-content/70 text-sm mb-6">
           Explore my technical skills and experience across different domains of
@@ -26,30 +26,30 @@ export function StickySidebar({
         </p>
       </div>
 
-      <ul className="menu menu-lg w-full">
+      <div className="w-full flex flex-wrap lg:block justify-around">
         {Object.entries(skills).map(([key, skill]) => (
-          <li key={key} className="mb-2">
+          <div key={key} className="mb-2">
             <button
               onClick={() => {
                 scrollToSection(key);
                 setActiveItem(key);
               }}
-              className={`flex items-center gap-3 p-4 rounded-lg transition-all duration-200 ${
+              className={`btn btn-lg h-auto flex items-center gap-3 p-4 rounded-lg transition-all duration-200 ${
                 activeItem === key
                   ? "bg-primary text-primary-content shadow-lg"
                   : "hover:bg-base-300"
               }`}
             >
-              <div className="flex-1 text-left">
+              <div className="flex-1 text-left max-w-30 lg:max-w-80">
                 <div className="font-semibold">{skill.title}</div>
                 <div className="text-xs opacity-70 mt-1">
                   {skill.technologies.length} technologies
                 </div>
               </div>
             </button>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

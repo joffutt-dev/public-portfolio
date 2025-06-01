@@ -26,7 +26,7 @@ const Portfolio = () => {
 
   return (
     <div data-theme="dark" className="min-h-screen bg-base-100">
-      <div className="flex">
+      <div className="lg:flex">
         {/* Sticky Sidebar */}
         <StickySidebar
           activeItem={activeSkill}
@@ -34,10 +34,10 @@ const Portfolio = () => {
         />
 
         {/* Main Content */}
-        <div className="flex-1 p-8">
+        <div className="flex-1 p-2 lg:p-6">
           <div className="">
             {/* Hero Section */}
-            <div className="hero min-h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl mb-12">
+            <div className="hero min-h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl mb-12">
               <div className="hero-content text-center">
                 <div className="max-w-md">
                   <h1 className="text-5xl font-bold mb-6">Joe Offutt</h1>
@@ -50,7 +50,7 @@ const Portfolio = () => {
                   </p>
                   <div className="flex gap-4 justify-center">
                     <button
-                      className="btn btn-primary btn-lg"
+                      className="btn btn-primary"
                       onClick={() =>
                         window.open("https://github.com/joffutt-dev", "_blank")
                       }
@@ -58,7 +58,7 @@ const Portfolio = () => {
                       View Projects
                     </button>
                     <button
-                      className="btn btn-outline btn-lg"
+                      className="btn btn-outline"
                       onClick={() =>
                         (
                           document?.getElementById(
